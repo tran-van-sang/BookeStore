@@ -67,7 +67,7 @@ export default {
     methods: {
         async verifyToken() {
             try {
-                const accessToken = localStorage.getItem('accessToken');
+                const accessToken = localStorage.getItem('access-token');
                 if(!accessToken) return;
 
                 let user = await AuthService.verifyToken(accessToken);
