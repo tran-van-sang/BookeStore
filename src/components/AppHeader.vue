@@ -141,7 +141,8 @@ export default {
                 // }
                 localStorage.setItem('first-login', 1);
                 this.$cookies.set('auth-token', res.headers['auth-token']);
-                console.log(res.headers['auth-token'])
+                console.log(res.headers['auth-token']);
+                localStorage.setItem("access-token",res.data.accessToken);
                 this.userStore.addDataCartFromMongoDB;
 
                 document.getElementById("Modaldangnhap").style.display = "none";
