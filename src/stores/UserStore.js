@@ -137,6 +137,7 @@ export const useUserStore = defineStore("UserStore", {
             await AuthService.signOut();
             window.localStorage.removeItem('cart-info')
             window.localStorage.removeItem('first-login')
+            window.localStorage.removeItem('access-token')
             this.user = null;
             this.cart = {
                 products: [],
