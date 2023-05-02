@@ -71,7 +71,7 @@ export default {
                 if(!accessToken) return;
 
                 let user = await AuthService.verifyToken(accessToken);
-                console.log("verifyToken",user);
+                //console.log("verifyToken",user);
                 if (user) {
                     this.userStore.setUserInfo(user);
                     const x = this.userStore.addDataCartFromMongoDB;
