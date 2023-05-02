@@ -166,7 +166,7 @@ export const useUserStore = defineStore("UserStore", {
         },
         setUserInfo(userInfo) {
             this.user = userInfo;
-            localStorage.setItem("access-token",this.user.accessToken);
+            //localStorage.setItem("access-token",this.user.accessToken);
             this.setInfoCart();
         },
         addToCart(book) {
